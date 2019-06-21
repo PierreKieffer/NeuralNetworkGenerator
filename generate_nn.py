@@ -163,7 +163,7 @@ def cross_validation(networks, batch_size, nb_epochs, n_splits):
 		print(10*'//')
 		print('split {}'.format(i))
 
-		X_train, X_test, y_train, y_test, nb_classes, input_size = load_processed_data('/home/audensiel/Documents/STAAC/data/tr_encode.csv', 'fraud')
+		X_train, X_test, y_train, y_test, nb_classes, input_size = load_processed_data('data.csv', 'label')
 
 		for network in networks:
 
@@ -188,7 +188,7 @@ def cross_validation(networks, batch_size, nb_epochs, n_splits):
 def main(): 
 
 	# Load data 
-	X_train, X_test, y_train, y_test, nb_classes, input_size = load_processed_data('/home/audensiel/Documents/STAAC/data/tr_encode.csv', 'fraud')
+	#X_train, X_test, y_train, y_test, nb_classes, input_size = load_processed_data('data.csv', 'label')
 
 
 	param_choices = {
